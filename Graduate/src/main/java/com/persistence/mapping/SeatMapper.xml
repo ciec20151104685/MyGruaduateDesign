@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.persistence.dao.SeatMapper">
+  <resultMap id="BaseResultMap" type="com.persistence.entity.Seat">
+    <id column="SeatId" jdbcType="INTEGER" property="seatid" />
+    <result column="floor" jdbcType="INTEGER" property="floor" />
+    <result column="area" jdbcType="VARCHAR" property="area" />
+    <result column="identify" jdbcType="INTEGER" property="identify" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="Susername" jdbcType="VARCHAR" property="susername" />
+    <result column="starttime" jdbcType="VARCHAR" property="starttime" />
+    <result column="freetime" jdbcType="INTEGER" property="freetime" />
+    <result column="savetimes" jdbcType="INTEGER" property="savetimes" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    SeatId, floor, area, identify, status, Susername, starttime, freetime, savetimes
+  </sql>
+  <select id="selectByExample" parameterType="com.persistence.entity.SeatExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    from seat
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from seat
+    where SeatId = #{seatid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from seat
+    where SeatId = #{seatid,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.persistence.entity.SeatExample">
+    delete from seat
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.persistence.entity.Seat">
+    insert into seat (SeatId, floor, area, 
+      identify, status, Susername, 
+      starttime, freetime, savetimes
+      )
+    values (#{seatid,jdbcType=INTEGER}, #{floor,jdbcType=INTEGER}, #{area,jdbcType=VARCHAR}, 
+      #{identify,jdbcType=INTEGER}, #{status,jdbcType=INTEGER}, #{susername,jdbcType=VARCHAR}, 
+      #{starttime,jdbcType=VARCHAR}, #{freetime,jdbcType=INTEGER}, #{savetimes,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.persistence.entity.Seat">
+    insert into seat
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="seatid != null">
+        SeatId,
+      </if>
+      <if test="floor != null">
+        floor,
+      </if>
+      <if test="area != null">
+        area,
+      </if>
+      <if test="identify != null">
+        identify,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="susername != null">
+        Susername,
+      </if>
+      <if test="starttime != null">
+        starttime,
+      </if>
+      <if test="freetime != null">
+        freetime,
+      </if>
+      <if test="savetimes != null">
+        savetimes,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="seatid != null">
+        #{seatid,jdbcType=INTEGER},
+      </if>
+      <if test="floor != null">
+        #{floor,jdbcType=INTEGER},
+      </if>
+      <if test="area != null">
+        #{area,jdbcType=VARCHAR},
+      </if>
+      <if test="identify != null">
+        #{identify,jdbcType=INTEGER},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="susername != null">
+        #{susername,jdbcType=VARCHAR},
+      </if>
+      <if test="starttime != null">
+        #{starttime,jdbcType=VARCHAR},
+      </if>
+      <if test="freetime != null">
+        #{freetime,jdbcType=INTEGER},
+      </if>
+      <if test="savetimes != null">
+        #{savetimes,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByExampleSelective" parameterType="map">
+    update seat
+    <set>
+      <if test="record.seatid != null">
+        SeatId = #{record.seatid,jdbcType=INTEGER},
+      </if>
+      <if test="record.floor != null">
+        floor = #{record.floor,jdbcType=INTEGER},
+      </if>
+      <if test="record.area != null">
+        area = #{record.area,jdbcType=VARCHAR},
+      </if>
+      <if test="record.identify != null">
+        identify = #{record.identify,jdbcType=INTEGER},
+      </if>
+      <if test="record.status != null">
+        status = #{record.status,jdbcType=INTEGER},
+      </if>
+      <if test="record.susername != null">
+        Susername = #{record.susername,jdbcType=VARCHAR},
+      </if>
+      <if test="record.starttime != null">
+        starttime = #{record.starttime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.freetime != null">
+        freetime = #{record.freetime,jdbcType=INTEGER},
+      </if>
+      <if test="record.savetimes != null">
+        savetimes = #{record.savetimes,jdbcType=INTEGER},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update seat
+    set SeatId = #{record.seatid,jdbcType=INTEGER},
+      floor = #{record.floor,jdbcType=INTEGER},
+      area = #{record.area,jdbcType=VARCHAR},
+      identify = #{record.identify,jdbcType=INTEGER},
+      status = #{record.status,jdbcType=INTEGER},
+      Susername = #{record.susername,jdbcType=VARCHAR},
+      starttime = #{record.starttime,jdbcType=VARCHAR},
+      freetime = #{record.freetime,jdbcType=INTEGER},
+      savetimes = #{record.savetimes,jdbcType=INTEGER}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.persistence.entity.Seat">
+    update seat
+    <set>
+      <if test="floor != null">
+        floor = #{floor,jdbcType=INTEGER},
+      </if>
+      <if test="area != null">
+        area = #{area,jdbcType=VARCHAR},
+      </if>
+      <if test="identify != null">
+        identify = #{identify,jdbcType=INTEGER},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="susername != null">
+        Susername = #{susername,jdbcType=VARCHAR},
+      </if>
+      <if test="starttime != null">
+        starttime = #{starttime,jdbcType=VARCHAR},
+      </if>
+      <if test="freetime != null">
+        freetime = #{freetime,jdbcType=INTEGER},
+      </if>
+      <if test="savetimes != null">
+        savetimes = #{savetimes,jdbcType=INTEGER},
+      </if>
+    </set>
+    where SeatId = #{seatid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.persistence.entity.Seat">
+    update seat
+    set floor = #{floor,jdbcType=INTEGER},
+      area = #{area,jdbcType=VARCHAR},
+      identify = #{identify,jdbcType=INTEGER},
+      status = #{status,jdbcType=INTEGER},
+      Susername = #{susername,jdbcType=VARCHAR},
+      starttime = #{starttime,jdbcType=VARCHAR},
+      freetime = #{freetime,jdbcType=INTEGER},
+      savetimes = #{savetimes,jdbcType=INTEGER}
+    where SeatId = #{seatid,jdbcType=INTEGER}
+  </update>
+</mapper>
