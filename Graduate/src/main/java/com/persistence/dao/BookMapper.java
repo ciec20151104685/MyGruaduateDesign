@@ -10,7 +10,7 @@ public interface BookMapper {
 
     int deleteByPrimaryKey(Integer bookid);
 
-    int insert(Book record);
+    int insert(Book book);
 
     int insertSelective(Book record);
 

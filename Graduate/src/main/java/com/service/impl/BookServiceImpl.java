@@ -43,23 +43,35 @@ public class BookServiceImpl implements BookService {
         bookExample.createCriteria().andBookidEqualTo(bookid);
         borrowBookExample.createCriteria().andBookidEqualTo(bookid);
         List<Book> books = bookMapper.selectByExample(bookExample);
-        borrowBookMapper.deleteByExample(borrowBookExample);
-        books.get(0).setBookstatus(1);
-//        userMapper.selectByExample(userExample) select 查询insert插入以此类推  看不懂就去百度
 
+        books.get(0).setBookstatus(1);
+        borrowBookMapper.deleteByExample(borrowBookExample);
+//        userMapper.selectByExample(userExample) select 查询insert插入以此类推  看不懂就去百度
+      //  Book book=null;
+//        if (book!=null){
+//           // book = books.get(0);
+//            book.setBookstatus(1);
+//            // borrowBookExample.createCriteria()
+////            BorrowBook borrowBook = new BorrowBook();
+////            borrowBook.setBookid(bookid);
+////            borrowBook.setStudentid(1000);
+//            borrowBookMapper.deleteByExample(borrowBookExample);
+//        }
         return 0;
+
 
 
 
     }
 
     @Override
-    public int AddBook(Integer bookid, String bookname, String bookauthor) {
+    public int AddBook(String bookname, String bookauthor) {
         BookExample bookExample = new BookExample();
+
         //bookExample.createCriteria().and
-        int insert = bookMapper.insert(bookauthor,bookid,bookname);
+        int insert = bookMapper.insert(bookname,bookauthor);
 //        userMapper.selectByExample(userExample) select 查询insert插入以此类推  看不懂就去百
-        return bookMapper.insert(bookauthor,bookid,bookname);
+        return insert;
     }
 
     @Override

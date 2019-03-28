@@ -100,10 +100,9 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.persistence.entity.Book">
-    insert into book (Bookid, Bookname, Bookauthor, 
-      bookstatus)
-    values (#{bookid,jdbcType=INTEGER}, #{bookname,jdbcType=VARCHAR}, #{bookauthor,jdbcType=VARCHAR}, 
-      #{bookstatus,jdbcType=INTEGER})
+    insert into book ( Bookname, Bookauthor)
+    values ( #{bookname,jdbcType=VARCHAR}, #{bookauthor,jdbcType=VARCHAR}
+    )
   </insert>
   <insert id="insertSelective" parameterType="com.persistence.entity.Book">
     insert into book
