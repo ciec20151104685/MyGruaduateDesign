@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.persistence.dao.BookMapper">
+  <resultMap id="BaseResultMap" type="com.persistence.entity.Book">
+    <id column="Bookid" jdbcType="INTEGER" property="bookid" />
+    <result column="Bookname" jdbcType="VARCHAR" property="bookname" />
+    <result column="Bookauthor" jdbcType="VARCHAR" property="bookauthor" />
+    <result column="bookstatus" jdbcType="INTEGER" property="bookstatus" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    Bookid, Bookname, Bookauthor, bookstatus
+  </sql>
+  <select id="selectByExample" parameterType="com.persistence.entity.BookExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    from book
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from book
+    where Bookid = #{bookid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from book
+    where Bookid = #{bookid,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.persistence.entity.BookExample">
+    delete from book
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.persistence.entity.Book">
+    insert into book ( Bookname, Bookauthor)
+    values ( #{bookname,jdbcType=VARCHAR}, #{bookauthor,jdbcType=VARCHAR}
+    )
+  </insert>
+  <insert id="insertSelective" parameterType="com.persistence.entity.Book">
+    insert into book
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="bookid != null">
+        Bookid,
+      </if>
+      <if test="bookname != null">
+        Bookname,
+      </if>
+      <if test="bookauthor != null">
+        Bookauthor,
+      </if>
+      <if test="bookstatus != null">
+        bookstatus,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="bookid != null">
+        #{bookid,jdbcType=INTEGER},
+      </if>
+      <if test="bookname != null">
+        #{bookname,jdbcType=VARCHAR},
+      </if>
+      <if test="bookauthor != null">
+        #{bookauthor,jdbcType=VARCHAR},
+      </if>
+      <if test="bookstatus != null">
+        #{bookstatus,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByExampleSelective" parameterType="map">
+    update book
+    <set>
+      <if test="record.bookid != null">
+        Bookid = #{record.bookid,jdbcType=INTEGER},
+      </if>
+      <if test="record.bookname != null">
+        Bookname = #{record.bookname,jdbcType=VARCHAR},
+      </if>
+      <if test="record.bookauthor != null">
+        Bookauthor = #{record.bookauthor,jdbcType=VARCHAR},
+      </if>
+      <if test="record.bookstatus != null">
+        bookstatus = #{record.bookstatus,jdbcType=INTEGER},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update book
+    set Bookid = #{record.bookid,jdbcType=INTEGER},
+      Bookname = #{record.bookname,jdbcType=VARCHAR},
+      Bookauthor = #{record.bookauthor,jdbcType=VARCHAR},
+      bookstatus = #{record.bookstatus,jdbcType=INTEGER}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.persistence.entity.Book">
+    update book
+    <set>
+      <if test="bookname != null">
+        Bookname = #{bookname,jdbcType=VARCHAR},
+      </if>
+      <if test="bookauthor != null">
+        Bookauthor = #{bookauthor,jdbcType=VARCHAR},
+      </if>
+      <if test="bookstatus != null">
+        bookstatus = #{bookstatus,jdbcType=INTEGER},
+      </if>
+    </set>
+    where Bookid = #{bookid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.persistence.entity.Book">
+    update book
+    set Bookname = #{bookname,jdbcType=VARCHAR},
+      Bookauthor = #{bookauthor,jdbcType=VARCHAR},
+      bookstatus = #{bookstatus,jdbcType=INTEGER}
+    where Bookid = #{bookid,jdbcType=INTEGER}
+  </update>
+</mapper>
