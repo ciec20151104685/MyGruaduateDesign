@@ -5,59 +5,42 @@ import com.persistence.dao.BorrowBookMapper;
 import com.persistence.entity.*;
 import com.service.BookService;
 import org.apache.poi.hssf.record.BookBoolRecord;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class BookServiceImpl implements BookService {
+    @Autowired
     BorrowBookMapper borrowBookMapper;
+    @Autowired
     BookMapper bookMapper;
-    @Override
-    public int Borrow(String userName, Integer bookid) {
-        //   你的业务也是XXExample 这里只用user举例
-        BorrowBookExample borrowBookExample = new BorrowBookExample();
+
+    public int Borrow(int studentid, String bookname) {
+        Book book = new Book();
         BookExample bookExample = new BookExample();
-       // borrowBookExample.createCriteria().andBookidEqualTo(bookid)=select * from borrow_book where bookid = "bookid"
-        bookExample.createCriteria().andBookidEqualTo(bookid);
-        List<Book> books = bookMapper.selectByExample(bookExample);
-        books.get(0).getBookauthor();
-//        userMapper.selectByExample(userExample) select 查询insert插入以此类推  看不懂就去百度
-        Book book=null;
-        if (book!=null){
-           book = books.get(0);
-           book.setBookstatus(0);
-          // borrowBookExample.createCriteria()
-           BorrowBook borrowBook = new BorrowBook();
-           borrowBook.setBookid(bookid);
-           borrowBook.setStudentid(1000);
-        }
-        return 0;
+        bookExample.createCriteria().andBooknameEqualTo(bookname);
+        List<Book> books =  bookMapper.selectByExample(bookExample);
+        book = books.get(0);
+        book.setBookstatus(0);
+        BorrowBook borrowBook = new BorrowBook();
+        borrowBook.setStudentid(studentid);
+        borrowBook.setBookid(book.getBookid());
+        int updata = borrowBookMapper.updateByPrimaryKey(borrowBook);
+
+
+        return updata;
 
     }
 
     @Override
-    public int returnback(Integer bookid) {
-        //   你的业务也是XXExample 这里只用user举例
-        BorrowBookExample borrowBookExample = new BorrowBookExample();
-        BookExample bookExample = new BookExample();
-        // borrowBookExample.createCriteria().andBookidEqualTo(bookid)=select * from borrow_book where bookid = "bookid"
-        bookExample.createCriteria().andBookidEqualTo(bookid);
-        borrowBookExample.createCriteria().andBookidEqualTo(bookid);
-        List<Book> books = bookMapper.selectByExample(bookExample);
+    public int returnback(Integer bookid,int studentid) {
+        Book
+        book = bookMapper.selectByPrimaryKey(bookid);
+        book.setBookstatus(1);
+        int delete = borrowBookMapper.deleteByPrimaryKey(studentid);
 
-        books.get(0).setBookstatus(1);
-        borrowBookMapper.deleteByExample(borrowBookExample);
-//        userMapper.selectByExample(userExample) select 查询insert插入以此类推  看不懂就去百度
-      //  Book book=null;
-//        if (book!=null){
-//           // book = books.get(0);
-//            book.setBookstatus(1);
-//            // borrowBookExample.createCriteria()
-////            BorrowBook borrowBook = new BorrowBook();
-////            borrowBook.setBookid(bookid);
-////            borrowBook.setStudentid(1000);
-//            borrowBookMapper.deleteByExample(borrowBookExample);
-//        }
-        return 0;
+        return delete;
 
 
 
@@ -66,22 +49,17 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public int AddBook(String bookname, String bookauthor) {
-        BookExample bookExample = new BookExample();
+        Book book = new Book();
+        book.setBookname(bookname);
+        book.setBookname(bookauthor);
+        int insert =bookMapper.insert(book);
 
-        //bookExample.createCriteria().and
-        int insert =bookMapper.insert(bookname,bookauthor);
-//        userMapper.selectByExample(userExample) select 查询insert插入以此类推  看不懂就去百
         return insert;
     }
 
     @Override
     public int DeleteBook(Integer bookid) {
-        //   你的业务也是XXExample 这里只用user举
-        BookExample bookExample = new BookExample();
-        // borrowBookExample.createCriteria().andBookidEqualTo(bookid)=select * from borrow_book where bookid = "bookid"
-        bookExample.createCriteria().andBookidEqualTo(bookid);
-        bookMapper.deleteByPrimaryKey(bookid);
-//        userMapper.selectByExample(userExample) select 查询insert插入以此类推  看不懂就去百度
-        return 0;
+       int delete = bookMapper.deleteByPrimaryKey(bookid);
+       return  delete;
     }
 }

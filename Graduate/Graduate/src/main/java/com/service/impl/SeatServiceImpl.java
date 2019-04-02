@@ -7,81 +7,66 @@ import com.persistence.entity.OrderSeatExample;
 import com.persistence.entity.Seat;
 import com.persistence.entity.SeatExample;
 import com.service.SeatService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
-
+@Service
 public class SeatServiceImpl implements SeatService {
+    @Autowired
     SeatMapper seatMapper;
+    @Autowired
     OrderSeatMapper orderSeatMapper;
+
+
+
     @Override
-    public int LookSeat() {
-        //   你的业务也是XXExample 这里只用user举例
+    public List<Seat> LookSeat(Integer floor) {
         SeatExample seatExample = new SeatExample();
-        // borrowBookExample.createCriteria().andBookidEqualTo(bookid)=select * from borrow_book where bookid = "bookid"
         seatExample.createCriteria().andFloorEqualTo(floor);
-        List<Seat> seats = SeatMapper.selectByExample(seatExample);
-
-//        userMapper.selectByExample(userExample) select 查询insert插入以此类推  看不懂就去百度
-//hhhhhhh
-        return 0;
+        List<Seat> seats = seatMapper.selectByExample(seatExample);
+        return seats;
     }
 
     @Override
-    public int OrderSeat() {
-        //   你的业务也是XXExample 这里只用user举例
-        OrderSeatExample orderSeatExample = new OrderSeatExample();
-        SeatExample seatExample = new SeatExample();
-        // borrowBookExample.createCriteria().andBookidEqualTo(bookid)=select * from borrow_book where bookid = "bookid"
-        seatExample.createCriteria().andSeatidEqualTo(Seatid);
-        List<Seat> seats = SeatMapper.selectByExample(seatExample);
-//        seats.get(0).getBookauthor();
-//        userMapper.selectByExample(userExample) select 查询insert插入以此类推  看不懂就去百度
-        Seat seat=null;
-        if (seat!=null){
-            seat = seats.get(0);
-            seat.setSeatstatus(0);
-            // borrowBookExample.createCriteria()
-            OrderSeat orderSeat = new OrderSeat();
-            orderSeat.setStudentid(1);
-        }
-        return 0;
+    public int OrderSeat(int seatid,int studentId) {
+
+        OrderSeat orderSeat = new OrderSeat();
+        orderSeat.setStudentid(studentId);
+        orderSeat.setSeatid(seatid);
+        orderSeat.setOrderdata(new Date());
+//        todo: m没写完
+        return orderSeatMapper.insert(orderSeat);
     }
 
     @Override
-    public int CancelOrder() {
-        OrderSeatExample orderSeatExample = new OrderSeatExample();
-        SeatExample seatExample = new SeatExample();
-        seatExample.createCriteria().andSeatidEqualTo(Seatid);
-        orderSeatExample.createCriteria().andSeatidEqualTo(Seatid);
-        List<OrderSeat> orderSeats=orderSeatMapper.deleteByPrimaryKey(1);
-        List<Seat> seats = SeatMapper.selectByExample(seatExample);
-        Seat seat= seats.get(0);
-        seat.setSeatid(1);
+    public int CancelOrder(int seatid,int studentid) {
+       Seat seat =seatMapper.selectByPrimaryKey(seatid);
+       seat.setStatus(1);
+       int updata = seatMapper.updateByPrimaryKey(seat);
+       orderSeatMapper.deleteByPrimaryKey(studentid);
 
-
-        return 0;
+        return updata;
     }
 
     @Override
-    public int AddSeat() {
-        SeatExample seatExample = new SeatExample();
+    public int AddSeat(int floor) {
+        Seat seat = new Seat();
+        seat.setFloor(floor);
+//hen duo
 
-        //bookExample.createCriteria().and
         int insert =seatMapper.insert(seat);
-//        userMapper.selectByExample(userExample) select 查询insert插入以此类推  看不懂就去百
+
         return insert;
     }
 
     @Override
-    public int SaveSeat() {
-        SeatExample seatExample = new SeatExample();
-        seatExample.createCriteria().andSeatidEqualTo(Seatid);
-        List<Seat> seats = SeatMapper.selectByExample(seatExample);
-        Seat seat= seats.get(0);
-        seat.setSeatid(1);
-
-
-        return 0;
+    public int SaveSeat(int seatid) {
+        Seat seat = seatMapper.selectByPrimaryKey(seatid);
+        seat.setStatus(0);
+        int updata=  seatMapper.updateByPrimaryKey(seat);
+        return  updata;
     }
 
     @Override

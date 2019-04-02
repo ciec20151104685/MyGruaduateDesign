@@ -14,7 +14,7 @@ public interface SeatMapper {
 
     int insertSelective(Seat record);
 
-    static List<Seat> selectByExample(SeatExample example);
+    List<Seat> selectByExample(SeatExample example);
 
     Seat selectByPrimaryKey(Integer seatid);
 
