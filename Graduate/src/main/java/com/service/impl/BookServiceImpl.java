@@ -1,5 +1,6 @@
 package com.service.impl;
 
+<<<<<<< HEAD
 import com.persistence.dao.BookMapper;
 import com.persistence.dao.BorrowBookMapper;
 import com.persistence.entity.*;
@@ -84,4 +85,7 @@ public class BookServiceImpl implements BookService {
 //        userMapper.selectByExample(userExample) select 查询insert插入以此类推  看不懂就去百度
         return 0;
     }
+=======
+public class BookServiceImpl {
+>>>>>>> parent of 750fc27... Add files via upload
 }
