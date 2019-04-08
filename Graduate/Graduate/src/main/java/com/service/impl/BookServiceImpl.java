@@ -35,7 +35,7 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public int returnback(Integer bookid,int studentid) {
-        Book
+        Book book;
         book = bookMapper.selectByPrimaryKey(bookid);
         book.setBookstatus(1);
         int delete = borrowBookMapper.deleteByPrimaryKey(studentid);
