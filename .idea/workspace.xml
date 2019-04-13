@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a281bfb2-904c-41a6-9bd2-cb3163181965" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/artifacts/Graduate_war.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/artifacts/Graduate_war_exploded.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__c3p0_c3p0_0_9_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__com_alibaba_fastjson_1_2_24.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__com_belerweb_pinyin4j_2_5_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_0_9_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__com_github_pagehelper_pagehelper_4_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__com_github_virtuald_curvesapi_1_03.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__com_google_code_gson_gson_2_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__com_google_guava_guava_15_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__com_google_inject_extensions_guice_multibindings_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__com_google_inject_guice_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__com_jolbox_bonecp_0_8_0_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__com_qiniu_qiniu_java_sdk_7_2_18.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_11_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__com_squareup_okio_okio_1_14_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__commons_net_commons_net_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__commons_pool_commons_pool_1_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__jstl_jstl_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_40.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__net_sf_ehcache_ehcache_core_2_6_11.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_apache_activemq_activemq_core_5_7_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_apache_activemq_activemq_pool_5_7_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_apache_activemq_kahadb_5_7_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_apache_activemq_protobuf_activemq_protobuf_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_j2ee_management_1_1_spec_1_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jms_1_1_spec_1_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jta_1_0_1B_spec_1_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_apache_poi_poi_3_14.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_14.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_14.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_apache_shiro_shiro_all_1_3_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_3_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_apache_shiro_shiro_ehcache_1_3_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_apache_shiro_shiro_guice_1_3_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_apache_shiro_shiro_web_1_3_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_8.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_flywaydb_flyway_core_5_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_fusesource_hawtbuf_hawtbuf_1_9.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_fusesource_hawtdispatch_hawtdispatch_1_11.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_fusesource_hawtdispatch_hawtdispatch_transport_1_11.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_fusesource_mqtt_client_mqtt_client_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_jasypt_jasypt_1_9_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_logback_extensions_logback_ext_spring_0_1_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_mongodb_mongo_java_driver_3_8_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_mybatis_mybatis_3_4_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_quartz_scheduler_quartz_2_2_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_22.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_21.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_12_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_1_1_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_springframework_data_spring_data_redis_1_7_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_springframework_spring_aop_4_2_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_springframework_spring_aspects_4_2_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_springframework_spring_beans_4_2_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_springframework_spring_context_4_2_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_springframework_spring_context_support_4_2_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_springframework_spring_core_4_2_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_springframework_spring_expression_4_2_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_springframework_spring_jdbc_4_2_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_springframework_spring_jms_4_2_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_springframework_spring_messaging_4_2_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_springframework_spring_orm_4_2_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_springframework_spring_oxm_4_2_9_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_springframework_spring_test_4_2_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_springframework_spring_tx_4_2_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_springframework_spring_web_4_2_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__org_springframework_spring_webmvc_4_2_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/Graduate.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/java/com/controller/BookController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/java/com/controller/SeatController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/java/com/controller/UserController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/java/com/persistence/dao/BookMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/java/com/persistence/dao/BorrowBookMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/java/com/persistence/dao/HelloSpringBoot.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/java/com/persistence/dao/OrderSeatMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/java/com/persistence/dao/SeatMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/java/com/persistence/dao/UserMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/java/com/persistence/dao/weather.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/java/com/persistence/entity/Book.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/java/com/persistence/entity/BookExample.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/java/com/persistence/entity/BorrowBook.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/java/com/persistence/entity/BorrowBookExample.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/java/com/persistence/entity/OrderSeat.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/java/com/persistence/entity/OrderSeatExample.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/java/com/persistence/entity/Seat.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/java/com/persistence/entity/SeatExample.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/java/com/persistence/entity/User.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/java/com/persistence/entity/UserExample.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/java/com/persistence/mapping/BookMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/java/com/persistence/mapping/BorrowBookMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/java/com/persistence/mapping/OrderSeatMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/java/com/persistence/mapping/SeatMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/java/com/persistence/mapping/UserMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/java/com/service/BookService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/java/com/service/SeatService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/java/com/service/UserService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/java/com/service/impl/BookServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/java/com/service/impl/SeatServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/java/com/service/impl/UserServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/resources/application-context.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/resources/application-mybatis.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/resources/db.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/resources/mybatis-generator.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/resources/spring-mvc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/webapp/WEB-INF/longin.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/webapp/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/src/main/webapp/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT.war" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/application-context.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/application-mybatis.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/controller/UserController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/dao/BookMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/dao/BorrowBookMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/dao/HelloSpringBoot.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/dao/OrderSeatMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/dao/SeatMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/dao/UserMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/dao/weather.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/entity/Book.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/entity/BookExample$Criteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/entity/BookExample$Criterion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/entity/BookExample$GeneratedCriteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/entity/BookExample.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/entity/BorrowBook.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/entity/BorrowBookExample$Criteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/entity/BorrowBookExample$Criterion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/entity/BorrowBookExample$GeneratedCriteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/entity/BorrowBookExample.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/entity/OrderSeat.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/entity/OrderSeatExample$Criteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/entity/OrderSeatExample$Criterion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/entity/OrderSeatExample$GeneratedCriteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/entity/OrderSeatExample.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/entity/Seat.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/entity/SeatExample$Criteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/entity/SeatExample$Criterion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/entity/SeatExample$GeneratedCriteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/entity/SeatExample.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/entity/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/entity/UserExample$Criteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/entity/UserExample$Criterion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/entity/UserExample$GeneratedCriteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/entity/UserExample.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/mapping/BookMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/mapping/BorrowBookMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/mapping/OrderSeatMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/mapping/SeatMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/persistence/mapping/UserMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/service/BookService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/service/SeatService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/service/UserService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/service/impl/BookServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/service/impl/SeatServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/com/service/impl/UserServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/db.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/mybatis-generator.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/classes/spring-mvc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/activemq-core-5.7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/activemq-pool-5.7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/activemq-protobuf-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/aopalliance-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/aspectjweaver-1.8.8.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/bonecp-0.8.0.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/c3p0-0.9.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/commons-beanutils-1.8.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/commons-codec-1.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/commons-collections4-4.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/commons-fileupload-1.3.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/commons-io-2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/commons-lang3-3.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/commons-net-3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/commons-pool-1.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/commons-pool2-2.4.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/curvesapi-1.03.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/ehcache-core-2.6.11.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/fastjson-1.2.24.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/flyway-core-5.2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/geronimo-j2ee-management_1.1_spec-1.0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/geronimo-jms_1.1_spec-1.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/geronimo-jta_1.0.1B_spec-1.0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/gson-2.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/guava-15.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/guice-3.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/guice-multibindings-3.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/hawtbuf-1.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/hawtdispatch-1.11.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/hawtdispatch-transport-1.11.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/httpclient-4.5.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/httpcore-4.4.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.9.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.9.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.9.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/jasypt-1.9.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/javax.inject-1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/javax.servlet-api-3.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/jcl-over-slf4j-1.7.22.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/jedis-2.9.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/jsqlparser-0.9.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/kahadb-5.7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/logback-classic-1.2.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/logback-core-1.1.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/logback-ext-spring-0.1.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/mongo-java-driver-3.8.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/mqtt-client-1.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/mybatis-3.4.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/mybatis-spring-1.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-5.1.40.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/okhttp-3.11.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/okio-1.14.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/pagehelper-4.2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/pinyin4j-2.5.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/poi-3.14.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/poi-ooxml-3.14.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/poi-ooxml-schemas-3.14.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/qiniu-java-sdk-7.2.18.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/quartz-2.2.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/shiro-all-1.3.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/shiro-core-1.3.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/shiro-ehcache-1.3.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/shiro-guice-1.3.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/shiro-web-1.3.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.21.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-4.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/spring-aspects-4.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-4.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/spring-context-4.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/spring-context-support-4.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/spring-core-4.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/spring-data-commons-1.12.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/spring-data-keyvalue-1.1.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/spring-data-redis-1.7.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-4.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-4.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/spring-jms-4.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/spring-messaging-4.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/spring-orm-4.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/spring-oxm-4.2.9.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-4.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/spring-web-4.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/stax-api-1.0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/lib/xmlbeans-2.6.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/longin.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/Graduate-1.0-SNAPSHOT/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/application-context.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/application-mybatis.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/controller/UserController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/dao/BookMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/dao/BorrowBookMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/dao/HelloSpringBoot.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/dao/OrderSeatMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/dao/SeatMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/dao/UserMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/dao/weather.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/entity/Book.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/entity/BookExample$Criteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/entity/BookExample$Criterion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/entity/BookExample$GeneratedCriteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/entity/BookExample.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/entity/BorrowBook.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/entity/BorrowBookExample$Criteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/entity/BorrowBookExample$Criterion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/entity/BorrowBookExample$GeneratedCriteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/entity/BorrowBookExample.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/entity/OrderSeat.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/entity/OrderSeatExample$Criteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/entity/OrderSeatExample$Criterion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/entity/OrderSeatExample$GeneratedCriteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/entity/OrderSeatExample.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/entity/Seat.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/entity/SeatExample$Criteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/entity/SeatExample$Criterion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/entity/SeatExample$GeneratedCriteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/entity/SeatExample.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/entity/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/entity/UserExample$Criteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/entity/UserExample$Criterion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/entity/UserExample$GeneratedCriteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/entity/UserExample.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/mapping/BookMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/mapping/BorrowBookMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/mapping/OrderSeatMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/mapping/SeatMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/persistence/mapping/UserMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/service/BookService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/service/SeatService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/service/UserService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/service/impl/BookServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/service/impl/SeatServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/com/service/impl/UserServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/db.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/mybatis-generator.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Graduate/Graduate/target/classes/spring-mvc.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graduate/.idea/workspace.xml" afterPath="$PROJECT_DIR$/Graduate/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graduate/Graduate/.idea/workspace.xml" afterPath="$PROJECT_DIR$/Graduate/Graduate/.idea/workspace.xml" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="357" />
+    <option name="y" value="163" />
+    <option name="width" value="1400" />
+    <option name="height" value="1025" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a281bfb2-904c-41a6-9bd2-cb3163181965" name="Default" comment="" />
+      <created>1554947889445</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554947889445</updated>
+      <workItem from="1554947891639" duration="28000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="28000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="357" y="163" width="1400" height="1025" extended-state="0" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962293" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

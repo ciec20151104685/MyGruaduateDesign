@@ -16,10 +16,10 @@ public class BookServiceImpl implements BookService {
     @Autowired
     BookMapper bookMapper;
 
-    public int Borrow(int studentid, String bookname) {
+    public int Borrow(int studentid, String bookid) {
         Book book = new Book();
         BookExample bookExample = new BookExample();
-        bookExample.createCriteria().andBooknameEqualTo(bookname);
+        bookExample.createCriteria().andBooknameEqualTo(bookid);
         List<Book> books =  bookMapper.selectByExample(bookExample);
         book = books.get(0);
         book.setBookstatus(0);
@@ -33,8 +33,13 @@ public class BookServiceImpl implements BookService {
 
     }
 
+
     @Override
-    public int returnback(Integer bookid,int studentid) {
+    public int Borrow(int studentid, int bookid) {
+            return 0;
+    }
+
+    public int returnback(Integer bookid, int studentid) {
         Book book;
         book = bookMapper.selectByPrimaryKey(bookid);
         book.setBookstatus(1);
