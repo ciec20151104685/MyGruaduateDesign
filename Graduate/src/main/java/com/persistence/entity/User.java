@@ -5,6 +5,8 @@ import java.io.Serializable;
 public class User implements Serializable {
     private Integer id;
 
+    private String stuname;
+
     private String username;
 
     private String password;
@@ -25,6 +27,14 @@ public class User implements Serializable {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public String getStuname() {
+        return stuname;
+    }
+
+    public void setStuname(String stuname) {
+        this.stuname = stuname == null ? null : stuname.trim();
     }
 
     public String getUsername() {
@@ -88,6 +98,7 @@ public class User implements Serializable {
         }
         User other = (User) that;
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
+            && (this.getStuname() == null ? other.getStuname() == null : this.getStuname().equals(other.getStuname()))
             && (this.getUsername() == null ? other.getUsername() == null : this.getUsername().equals(other.getUsername()))
             && (this.getPassword() == null ? other.getPassword() == null : this.getPassword().equals(other.getPassword()))
             && (this.getCredit() == null ? other.getCredit() == null : this.getCredit().equals(other.getCredit()))
@@ -101,6 +112,7 @@ public class User implements Serializable {
         final int prime = 31;
         int result = 1;
         result = prime * result + ((getId() == null) ? 0 : getId().hashCode());
+        result = prime * result + ((getStuname() == null) ? 0 : getStuname().hashCode());
         result = prime * result + ((getUsername() == null) ? 0 : getUsername().hashCode());
         result = prime * result + ((getPassword() == null) ? 0 : getPassword().hashCode());
         result = prime * result + ((getCredit() == null) ? 0 : getCredit().hashCode());
@@ -117,6 +129,7 @@ public class User implements Serializable {
         sb.append(" [");
         sb.append("Hash = ").append(hashCode());
         sb.append(", id=").append(id);
+        sb.append(", stuname=").append(stuname);
         sb.append(", username=").append(username);
         sb.append(", password=").append(password);
         sb.append(", credit=").append(credit);

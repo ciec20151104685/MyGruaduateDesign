@@ -26,7 +26,7 @@ public class UserServiceImpl implements UserService {
         List<User> users = userMapper.selectByExample(userExample);
 //        userMapper.selectByExample(userExample) select 查询insert插入以此类推  看不懂就去百度
         User user = null;
-        if (users!=null){
+        if (users!=null && users.size()>0){
             user = users.get(0);
         }
         return user;

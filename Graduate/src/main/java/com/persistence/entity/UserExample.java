@@ -164,6 +164,76 @@ public class UserExample {
             return (Criteria) this;
         }
 
+        public Criteria andStunameIsNull() {
+            addCriterion("stuname is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andStunameIsNotNull() {
+            addCriterion("stuname is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andStunameEqualTo(String value) {
+            addCriterion("stuname =", value, "stuname");
+            return (Criteria) this;
+        }
+
+        public Criteria andStunameNotEqualTo(String value) {
+            addCriterion("stuname <>", value, "stuname");
+            return (Criteria) this;
+        }
+
+        public Criteria andStunameGreaterThan(String value) {
+            addCriterion("stuname >", value, "stuname");
+            return (Criteria) this;
+        }
+
+        public Criteria andStunameGreaterThanOrEqualTo(String value) {
+            addCriterion("stuname >=", value, "stuname");
+            return (Criteria) this;
+        }
+
+        public Criteria andStunameLessThan(String value) {
+            addCriterion("stuname <", value, "stuname");
+            return (Criteria) this;
+        }
+
+        public Criteria andStunameLessThanOrEqualTo(String value) {
+            addCriterion("stuname <=", value, "stuname");
+            return (Criteria) this;
+        }
+
+        public Criteria andStunameLike(String value) {
+            addCriterion("stuname like", value, "stuname");
+            return (Criteria) this;
+        }
+
+        public Criteria andStunameNotLike(String value) {
+            addCriterion("stuname not like", value, "stuname");
+            return (Criteria) this;
+        }
+
+        public Criteria andStunameIn(List<String> values) {
+            addCriterion("stuname in", values, "stuname");
+            return (Criteria) this;
+        }
+
+        public Criteria andStunameNotIn(List<String> values) {
+            addCriterion("stuname not in", values, "stuname");
+            return (Criteria) this;
+        }
+
+        public Criteria andStunameBetween(String value1, String value2) {
+            addCriterion("stuname between", value1, value2, "stuname");
+            return (Criteria) this;
+        }
+
+        public Criteria andStunameNotBetween(String value1, String value2) {
+            addCriterion("stuname not between", value1, value2, "stuname");
+            return (Criteria) this;
+        }
+
         public Criteria andUsernameIsNull() {
             addCriterion("username is null");
             return (Criteria) this;
@@ -551,6 +621,11 @@ public class UserExample {
 
         public Criteria andAuthorityNotBetween(Integer value1, Integer value2) {
             addCriterion("authority not between", value1, value2, "authority");
+            return (Criteria) this;
+        }
+
+        public Criteria andStunameLikeInsensitive(String value) {
+            addCriterion("upper(stuname) like", value.toUpperCase(), "stuname");
             return (Criteria) this;
         }
 

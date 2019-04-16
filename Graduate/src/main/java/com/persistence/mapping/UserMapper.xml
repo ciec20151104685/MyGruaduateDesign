@@ -3,6 +3,7 @@
 <mapper namespace="com.persistence.dao.UserMapper">
   <resultMap id="BaseResultMap" type="com.persistence.entity.User">
     <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="stuname" jdbcType="VARCHAR" property="stuname" />
     <result column="username" jdbcType="VARCHAR" property="username" />
     <result column="password" jdbcType="VARCHAR" property="password" />
     <result column="credit" jdbcType="INTEGER" property="credit" />
@@ -69,7 +70,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, username, password, credit, mail, phonenum, authority
+    id, stuname, username, password, credit, mail, phonenum, authority
   </sql>
   <select id="selectByExample" parameterType="com.persistence.entity.UserExample" resultMap="BaseResultMap">
     select
@@ -92,9 +93,6 @@
     from user
     where id = #{id,jdbcType=INTEGER}
   </select>
-  <!--那个方法对应的就是这个sql语句-->
-  <!--是的-->
-  <!--懂了？-->
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from user
     where id = #{id,jdbcType=INTEGER}
@@ -106,18 +104,21 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.persistence.entity.User">
-    insert into user (id, username, password, 
-      credit, mail, phonenum, 
-      authority)
-    values (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
-      #{credit,jdbcType=INTEGER}, #{mail,jdbcType=VARCHAR}, #{phonenum,jdbcType=INTEGER}, 
-      #{authority,jdbcType=INTEGER})
+    insert into user (id, stuname, username, 
+      password, credit, mail, 
+      phonenum, authority)
+    values (#{id,jdbcType=INTEGER}, #{stuname,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR}, 
+      #{password,jdbcType=VARCHAR}, #{credit,jdbcType=INTEGER}, #{mail,jdbcType=VARCHAR}, 
+      #{phonenum,jdbcType=INTEGER}, #{authority,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="com.persistence.entity.User">
     insert into user
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
         id,
+      </if>
+      <if test="stuname != null">
+        stuname,
       </if>
       <if test="username != null">
         username,
@@ -141,6 +142,9 @@
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="id != null">
         #{id,jdbcType=INTEGER},
+      </if>
+      <if test="stuname != null">
+        #{stuname,jdbcType=VARCHAR},
       </if>
       <if test="username != null">
         #{username,jdbcType=VARCHAR},
@@ -168,6 +172,9 @@
       <if test="record.id != null">
         id = #{record.id,jdbcType=INTEGER},
       </if>
+      <if test="record.stuname != null">
+        stuname = #{record.stuname,jdbcType=VARCHAR},
+      </if>
       <if test="record.username != null">
         username = #{record.username,jdbcType=VARCHAR},
       </if>
@@ -194,6 +201,7 @@
   <update id="updateByExample" parameterType="map">
     update user
     set id = #{record.id,jdbcType=INTEGER},
+      stuname = #{record.stuname,jdbcType=VARCHAR},
       username = #{record.username,jdbcType=VARCHAR},
       password = #{record.password,jdbcType=VARCHAR},
       credit = #{record.credit,jdbcType=INTEGER},
@@ -207,6 +215,9 @@
   <update id="updateByPrimaryKeySelective" parameterType="com.persistence.entity.User">
     update user
     <set>
+      <if test="stuname != null">
+        stuname = #{stuname,jdbcType=VARCHAR},
+      </if>
       <if test="username != null">
         username = #{username,jdbcType=VARCHAR},
       </if>
@@ -230,7 +241,8 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="com.persistence.entity.User">
     update user
-    set username = #{username,jdbcType=VARCHAR},
+    set stuname = #{stuname,jdbcType=VARCHAR},
+      username = #{username,jdbcType=VARCHAR},
       password = #{password,jdbcType=VARCHAR},
       credit = #{credit,jdbcType=INTEGER},
       mail = #{mail,jdbcType=VARCHAR},
