@@ -2,6 +2,8 @@ package com.controller;
 
 import com.persistence.entity.User;
 import com.service.UserService;
+import com.utils.SendMailUtils;
+import com.utils.Utils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
@@ -10,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 @Controller
 @RequestMapping("/user/")
@@ -45,6 +48,7 @@ public class UserController {
         return "/index";
 
     }
+
     @RequestMapping("register1")
     public String register1(HttpServletRequest request, Model model) {
 
@@ -78,7 +82,24 @@ public class UserController {
         model.addAttribute("user", regiest);
 //        返回页面
         return "ok";
-
-
     }
+
+    @RequestMapping("all/user")
+    public String alluserhtml(HttpServletRequest request, Model model) {
+        List<User> userList = userService.getAllUserList();
+        model.addAttribute("userList", userList);
+        return "/ReaderList";
+    }
+
+    @ResponseBody
+    @RequestMapping("/send/mail")
+    public String sendMail(HttpServletRequest request, Model model) throws Exception {
+        Integer i = Utils.randomCode();
+        String mail = request.getParameter("mail");
+
+        SendMailUtils.sendEmail(mail, "内蒙古师范大学图书馆", "验证码为："+i);
+        return i.toString();
+    }
+
 }
+

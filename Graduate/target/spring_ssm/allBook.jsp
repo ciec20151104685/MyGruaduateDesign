@@ -51,7 +51,6 @@
 </body>
 </html>
 <script>
-    console.log('${pageContext.request.contextPath}/js/jquery-3.3.1/jquery-3.3.1.js');
 function deleteBook(id) {
     $.post("${pageContext.request.contextPath}/book/delete/book",{bookid:id},function (result) {
         layui.layer.msg("删除成功",function () {
@@ -59,4 +58,4 @@ function deleteBook(id) {
         })
     })
 }
-</script>.
+</script>

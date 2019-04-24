@@ -44,8 +44,13 @@
             <td>${borrowbook.bookid}</td>
             <td>${borrowbook.bookname}</td>
             <td>${borrowbook.borrowdata}</td>
-
-            <td><a>编辑</a>或<span onclick="deleteBorrowBook(${borrowbook.bookid})">还书</span></td>
+            <c:if test="${book.bookstatus==1}">
+                <td>可借</td>
+            </c:if>
+            <c:if test="${book.bookstatus!=1}">
+                <td>已借</td>
+            </c:if>
+            <td><a>编辑</a>或<span onclick="deleteBook(${book.bookid})">删除</span></td>
         </tr>
     </c:forEach>
     </tbody>
@@ -55,9 +60,9 @@
 </html>
 <script>
     console.log('${pageContext.request.contextPath}/js/jquery-3.3.1/jquery-3.3.1.js');
-    function deleteBorrowBook(id) {
-        $.post("${pageContext.request.contextPath}/book/return/book",{bookid:id},function (result) {
-            layui.layer.msg("还书成功",function () {
+    function deleteBook(id) {
+        $.post("${pageContext.request.contextPath}/book/delete/book",{bookid:id},function (result) {
+            layui.layer.msg("删除成功",function () {
                 window.location.reload(true);
             })
         })

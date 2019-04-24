@@ -5,6 +5,8 @@ import java.io.Serializable;
 public class Book implements Serializable {
     private Integer bookid;
 
+    private String bookdetil;
+
     private String bookname;
 
     private String bookauthor;
@@ -19,6 +21,14 @@ public class Book implements Serializable {
 
     public void setBookid(Integer bookid) {
         this.bookid = bookid;
+    }
+
+    public String getBookdetil() {
+        return bookdetil;
+    }
+
+    public void setBookdetil(String bookdetil) {
+        this.bookdetil = bookdetil == null ? null : bookdetil.trim();
     }
 
     public String getBookname() {
@@ -58,6 +68,7 @@ public class Book implements Serializable {
         }
         Book other = (Book) that;
         return (this.getBookid() == null ? other.getBookid() == null : this.getBookid().equals(other.getBookid()))
+            && (this.getBookdetil() == null ? other.getBookdetil() == null : this.getBookdetil().equals(other.getBookdetil()))
             && (this.getBookname() == null ? other.getBookname() == null : this.getBookname().equals(other.getBookname()))
             && (this.getBookauthor() == null ? other.getBookauthor() == null : this.getBookauthor().equals(other.getBookauthor()))
             && (this.getBookstatus() == null ? other.getBookstatus() == null : this.getBookstatus().equals(other.getBookstatus()));
@@ -68,6 +79,7 @@ public class Book implements Serializable {
         final int prime = 31;
         int result = 1;
         result = prime * result + ((getBookid() == null) ? 0 : getBookid().hashCode());
+        result = prime * result + ((getBookdetil() == null) ? 0 : getBookdetil().hashCode());
         result = prime * result + ((getBookname() == null) ? 0 : getBookname().hashCode());
         result = prime * result + ((getBookauthor() == null) ? 0 : getBookauthor().hashCode());
         result = prime * result + ((getBookstatus() == null) ? 0 : getBookstatus().hashCode());
@@ -81,6 +93,7 @@ public class Book implements Serializable {
         sb.append(" [");
         sb.append("Hash = ").append(hashCode());
         sb.append(", bookid=").append(bookid);
+        sb.append(", bookdetil=").append(bookdetil);
         sb.append(", bookname=").append(bookname);
         sb.append(", bookauthor=").append(bookauthor);
         sb.append(", bookstatus=").append(bookstatus);

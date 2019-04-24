@@ -30,7 +30,7 @@
         <span class="infotitle">密码：</span><input class="required" name="bookname" id="password">
     </div>
     <div>
-        <span class="infotitle">mail：</span><input class="required" name="bookauthor" id="mail">
+        <span class="infotitle">mail：</span><input class="required" name="bookauthor" id="mail"><span class="infotitle" onclick="sendMail()" style="cursor:pointer;"><a>发送验证码</a></span>
     </div>
     <div>
         <span class="infotitle">手机号：</span><input class="required" name="bookpublisher" id="phonenum">
@@ -38,7 +38,9 @@
     <div>
         <span class="infotitle">学生姓名：</span><input class="required" name="bookprice" id="stuname">
     </div>
-
+    <div>
+        <span class="infotitle">验证码：</span><input class="required" name="checkpassword" id="checkpassword">
+    </div>
     <div class="button">
         <button  onclick="register()">注册</button>
     </div>
@@ -49,12 +51,26 @@
 
 
 <script>
+ var check = "";
+    function sendMail() {
+        var mail = $("#mail").val();
+        $.post("${pageContext.request.contextPath}/user/send/mail",{mail:mail},function (res) {
+            check = res;
+        })
+    }
     function register() {
         var username = $("#username").val();
         var password = $("#password").val();
         var mail = $("#mail").val();
         var phonenum = $("#phonenum").val();
         var stuname = $("#stuname").val();
+        var checkpassword = $("#checkpassword").val();
+        if (checkpassword==""){
+            layui.layer.msg("请输入验证码")
+        }
+        if (checkpassword!=check){
+            layui.layer.msg("验证码有误");
+        }
         $.post("${pageContext.request.contextPath}/user/register", {
             username: username,
             password: password,

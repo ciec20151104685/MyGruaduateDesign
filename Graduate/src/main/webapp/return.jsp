@@ -24,7 +24,7 @@
     <div class="title">
         请输入读者学号
     </div>
-    <form action="ReaderAction?action=GetBorrowListById" onsubmit="return errorsubmit()" method="post">
+
         <div>
             <span class="infotitle">读者学号：</span><input type="text" onkeyup="readercheck()" name="studentid" id="readerid"><span id="readeridcheck" class="error"></span>
         </div>
@@ -32,22 +32,22 @@
         <span class="infotitle">书本编号：</span><input type="text" name="bookid" onkeyup="bookcheck()" id="bookid"><span id="bookidcheck" class="error"></span>
     </div>
         <div class="button">
-            <button type="submit" class="btn btn-success" onclick="returnbook()">提交</button>
+            <button  class="btn btn-success" onclick="returnbook()">提交</button>
             <button type="reset" class="btn btn-default" onclick="getback()">重填</button>
         </div>
-    </form>
+
 </div>
 </html>
 <script>
     function  returnbook() {
-        var studentid = $("#studentid").val();
+        var studentid = $("#readerid").val();
         var bookid = $("#bookid").val();
         //        url   参数  回掉
-        $.post("${pageContext.request.contextPath}/book/return/book", {bookname: bookname, bookauthor:bookauthor}, function (result) {
+        $.post("${pageContext.request.contextPath}/book/return/book", {bookid: bookid, studentid:studentid}, function (result) {
             if (result == "ok"){
-                window.location.href = "${pageContext.request.contextPath}/book/return/book"
+                window.location.href = "${pageContext.request.contextPath}/book/return/book/get"
             }else{
-                layui.layer.msg("删除失败失败")
+                layui.layer.msg("还书失败");
 //                alert("err");
             }
         })

@@ -25,41 +25,39 @@
 </head>
 <body>
 <h1 align="center">欢迎进入图书馆管理系统</h1>
-<jsp:include page="nav.html"/>
-<%
-    Book book = (Book)session.getAttribute("resultbook");
-%>
+<jsp:include page="nav.jsp"/>
+
 <form action="BookAction?action=EditDone" method="post">
     <div class="detail">
         <div class="title">
             <span>编辑图书详情信息</span>
         </div>
         <div>
-            <span class="infotitle">书本编号：</span><input name="id" value="<%=book.getId()%>" readonly="readonly">
+            <span class="infotitle">书本编号：</span><input name="id" value="" readonly="readonly">
         </div>
         <div>
-            <span class="infotitle">书本名称：</span><input name="name" value="<%=book.getName()%>">
+            <span class="infotitle">书本名称：</span><input name="name" value="">
         </div>
         <div>
-            <span class="infotitle">书本作者：</span><input name="author" value="<%=book.getAuthor()%>">
+            <span class="infotitle">书本作者：</span><input name="author" value=">">
         </div>
         <div>
-            <span class="infotitle">出版单位：</span><input name="publisher" value="<%=book.getPublisher()%>">
+            <span class="infotitle">出版单位：</span><input name="publisher" value="">
         </div>
         <div>
-            <span class="infotitle">书本价格：</span><input name="price" value="<%=book.getPrice()%>">
+            <span class="infotitle">书本价格：</span><input name="price" value="">
         </div>
         <div>
-            <span class="infotitle">书本类目：</span><input name="category" value="<%=book.getCategory()%>">
+            <span class="infotitle">书本类目：</span><input name="category" value="">
         </div>
         <div>
-            <span class="infotitle">书本库存：</span><input name="store" value="<%=book.getStore()%>">
+            <span class="infotitle">书本库存：</span><input name="store" value="">
         </div>
         <div>
-            <span class="infotitle">所在位置：</span><input name="location" value="<%=book.getLocation()%>">
+            <span class="infotitle">所在位置：</span><input name="location" value="">
         </div>
         <div>
-            <span class="infotitle">书本详情：</span><textarea name="desc"><%=book.getDesc()%></textarea>
+            <span class="infotitle">书本详情：</span><textarea name="desc"></textarea>
         </div>
         <div class="button">
             <button type="submit" class="btn btn-success">编辑完成</button>

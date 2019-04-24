@@ -23,12 +23,6 @@
 <head>
     <title>书本借出记录登记表</title>
 </head>
-<%
-    request.setCharacterEncoding("utf-8");
-    if(session.getAttribute("adminname") == null){
-        response.sendRedirect("/Library/index.jsp");
-    }
-%>
 <body>
 <h1 align="center">欢迎进入图书馆管理系统</h1>
 <jsp:include page="nav.jsp"/>
@@ -36,36 +30,34 @@
     <div class="title">
         书本借出记录登记表
     </div>
-    <form action="IOAction?action=borrow" onsubmit="return errorsubmit()" method="post">
+
         <div>
-            <span class="infotitle">读者学号：</span><input type="text" onkeyup="readercheck()" name="studentid" id="readerid"><span id="readeridcheck" class="error"></span>
+            <span class="infotitle">读者学号：</span><input type="text" onkeyup="readercheck()" name="studentid" id="studentid"><span id="readeridcheck" class="error"></span>
         </div>
 
         <div>
             <span class="infotitle">书本编号：</span><input type="text" name="bookid" onkeyup="bookcheck()" id="bookid"><span id="bookidcheck" class="error"></span>
         </div>
         <div class="button">
-            <button type="submit" class="btn btn-success" onclick="submit()">提交</button>
+            <button class="btn btn-success" onclick="submit()">提交</button>
             <button type="reset" class="btn btn-default" onclick="getback">重填</button>
         </div>
-    </form>
+
 </div>
 </body>
 </html>
 <script>
     function submit() {
-        Date date = new Date();
-        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        String s = df.format(date);
+
         var bookid = $("#bookid").val();
         var studentid = $("#studentid").val();
-        var borrowdata = s;
-        var exceptreturnTime = s+"30";
+        var borrowdata = "";
+
 
         //        url   参数  回掉
-        $.post("${pageContext.request.contextPath}/book/borrow/book", {bookid: bookid, studentid:studentid, borrowdata:borrowdata, exceptreturnTime:exceptreturnTime}, function (result) {
+        $.post("${pageContext.request.contextPath}/book/borrow/book", {bookid: bookid, studentid:studentid}, function (result) {
             if (result == "ok"){
-                window.location.href = "${pageContext.request.contextPath}/book/borrow/book"
+                window.location.href = "${pageContext.request.contextPath}/book/borrow/book/get"
             }else{
                 layui.layer.msg("借书失败")
 //                alert("err");
@@ -75,7 +67,7 @@
 
     }
     function  getback() {
-        window.location.href = "${pageContext.request.contextPath}/book/borrow/book"
+        window.location.href = "${pageContext.request.contextPath}/book/borrow/book/get"
 
     }
 </script>

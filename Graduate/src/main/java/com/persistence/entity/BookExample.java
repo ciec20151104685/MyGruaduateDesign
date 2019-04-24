@@ -164,6 +164,76 @@ public class BookExample {
             return (Criteria) this;
         }
 
+        public Criteria andBookdetilIsNull() {
+            addCriterion("BookDetil is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andBookdetilIsNotNull() {
+            addCriterion("BookDetil is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andBookdetilEqualTo(String value) {
+            addCriterion("BookDetil =", value, "bookdetil");
+            return (Criteria) this;
+        }
+
+        public Criteria andBookdetilNotEqualTo(String value) {
+            addCriterion("BookDetil <>", value, "bookdetil");
+            return (Criteria) this;
+        }
+
+        public Criteria andBookdetilGreaterThan(String value) {
+            addCriterion("BookDetil >", value, "bookdetil");
+            return (Criteria) this;
+        }
+
+        public Criteria andBookdetilGreaterThanOrEqualTo(String value) {
+            addCriterion("BookDetil >=", value, "bookdetil");
+            return (Criteria) this;
+        }
+
+        public Criteria andBookdetilLessThan(String value) {
+            addCriterion("BookDetil <", value, "bookdetil");
+            return (Criteria) this;
+        }
+
+        public Criteria andBookdetilLessThanOrEqualTo(String value) {
+            addCriterion("BookDetil <=", value, "bookdetil");
+            return (Criteria) this;
+        }
+
+        public Criteria andBookdetilLike(String value) {
+            addCriterion("BookDetil like", value, "bookdetil");
+            return (Criteria) this;
+        }
+
+        public Criteria andBookdetilNotLike(String value) {
+            addCriterion("BookDetil not like", value, "bookdetil");
+            return (Criteria) this;
+        }
+
+        public Criteria andBookdetilIn(List<String> values) {
+            addCriterion("BookDetil in", values, "bookdetil");
+            return (Criteria) this;
+        }
+
+        public Criteria andBookdetilNotIn(List<String> values) {
+            addCriterion("BookDetil not in", values, "bookdetil");
+            return (Criteria) this;
+        }
+
+        public Criteria andBookdetilBetween(String value1, String value2) {
+            addCriterion("BookDetil between", value1, value2, "bookdetil");
+            return (Criteria) this;
+        }
+
+        public Criteria andBookdetilNotBetween(String value1, String value2) {
+            addCriterion("BookDetil not between", value1, value2, "bookdetil");
+            return (Criteria) this;
+        }
+
         public Criteria andBooknameIsNull() {
             addCriterion("Bookname is null");
             return (Criteria) this;
@@ -361,6 +431,11 @@ public class BookExample {
 
         public Criteria andBookstatusNotBetween(Integer value1, Integer value2) {
             addCriterion("bookstatus not between", value1, value2, "bookstatus");
+            return (Criteria) this;
+        }
+
+        public Criteria andBookdetilLikeInsensitive(String value) {
+            addCriterion("upper(BookDetil) like", value.toUpperCase(), "bookdetil");
             return (Criteria) this;
         }
 

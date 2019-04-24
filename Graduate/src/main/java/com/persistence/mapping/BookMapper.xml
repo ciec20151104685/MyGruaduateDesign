@@ -3,6 +3,7 @@
 <mapper namespace="com.persistence.dao.BookMapper">
   <resultMap id="BaseResultMap" type="com.persistence.entity.Book">
     <id column="Bookid" jdbcType="INTEGER" property="bookid" />
+    <result column="BookDetil" jdbcType="VARCHAR" property="bookdetil" />
     <result column="Bookname" jdbcType="VARCHAR" property="bookname" />
     <result column="Bookauthor" jdbcType="VARCHAR" property="bookauthor" />
     <result column="bookstatus" jdbcType="INTEGER" property="bookstatus" />
@@ -66,7 +67,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    Bookid, Bookname, Bookauthor, bookstatus
+    Bookid, BookDetil, Bookname, Bookauthor, bookstatus
   </sql>
   <select id="selectByExample" parameterType="com.persistence.entity.BookExample" resultMap="BaseResultMap">
     select
@@ -100,15 +101,19 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.persistence.entity.Book">
-    insert into book ( Bookname, Bookauthor)
-    values ( #{bookname,jdbcType=VARCHAR}, #{bookauthor,jdbcType=VARCHAR}
-    )
+    insert into book (Bookid, BookDetil, Bookname, 
+      Bookauthor, bookstatus)
+    values (#{bookid,jdbcType=INTEGER}, #{bookdetil,jdbcType=VARCHAR}, #{bookname,jdbcType=VARCHAR}, 
+      #{bookauthor,jdbcType=VARCHAR}, #{bookstatus,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="com.persistence.entity.Book">
     insert into book
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="bookid != null">
         Bookid,
+      </if>
+      <if test="bookdetil != null">
+        BookDetil,
       </if>
       <if test="bookname != null">
         Bookname,
@@ -123,6 +128,9 @@
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="bookid != null">
         #{bookid,jdbcType=INTEGER},
+      </if>
+      <if test="bookdetil != null">
+        #{bookdetil,jdbcType=VARCHAR},
       </if>
       <if test="bookname != null">
         #{bookname,jdbcType=VARCHAR},
@@ -141,6 +149,9 @@
       <if test="record.bookid != null">
         Bookid = #{record.bookid,jdbcType=INTEGER},
       </if>
+      <if test="record.bookdetil != null">
+        BookDetil = #{record.bookdetil,jdbcType=VARCHAR},
+      </if>
       <if test="record.bookname != null">
         Bookname = #{record.bookname,jdbcType=VARCHAR},
       </if>
@@ -158,6 +169,7 @@
   <update id="updateByExample" parameterType="map">
     update book
     set Bookid = #{record.bookid,jdbcType=INTEGER},
+      BookDetil = #{record.bookdetil,jdbcType=VARCHAR},
       Bookname = #{record.bookname,jdbcType=VARCHAR},
       Bookauthor = #{record.bookauthor,jdbcType=VARCHAR},
       bookstatus = #{record.bookstatus,jdbcType=INTEGER}
@@ -168,6 +180,9 @@
   <update id="updateByPrimaryKeySelective" parameterType="com.persistence.entity.Book">
     update book
     <set>
+      <if test="bookdetil != null">
+        BookDetil = #{bookdetil,jdbcType=VARCHAR},
+      </if>
       <if test="bookname != null">
         Bookname = #{bookname,jdbcType=VARCHAR},
       </if>
@@ -182,7 +197,8 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="com.persistence.entity.Book">
     update book
-    set Bookname = #{bookname,jdbcType=VARCHAR},
+    set BookDetil = #{bookdetil,jdbcType=VARCHAR},
+      Bookname = #{bookname,jdbcType=VARCHAR},
       Bookauthor = #{bookauthor,jdbcType=VARCHAR},
       bookstatus = #{bookstatus,jdbcType=INTEGER}
     where Bookid = #{bookid,jdbcType=INTEGER}

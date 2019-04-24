@@ -23,7 +23,7 @@
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="${pageContext.request.contextPath}/book/all/book">查看图书总表</a>
                     <a class="dropdown-item" href="${pageContext.request.contextPath}/book/add/book/get">添加书本</a>
-                    <a class="dropdown-item" href="BookAction?action=gettemp">查看预添加书本列表</a>
+                    <%--<a class="dropdown-item" href="BookAction?action=gettemp">查看预添加书本列表</a>--%>
                 </div>
             </li>
             <li class="nav-item dropdown">
@@ -31,15 +31,15 @@
                     借书与还书
                 </a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="borrow.jsp">借书</a>
-                    <a class="dropdown-item" href="return.jsp">还书</a>
+                    <a class="dropdown-item" href="${pageContext.request.contextPath}/book/borrow/book/get">借书</a>
+                    <a class="dropdown-item" href="${pageContext.request.contextPath}/book/return/book/get">还书</a>
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="IOAction?action=getlog">图书进出记录</a>
+                <a class="nav-link" href="${pageContext.request.contextPath}/book/alllog/book">图书进出记录</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="ReaderAction?action=GetAllReader">用户管理</a>
+                <a class="nav-link" href="${pageContext.request.contextPath}/user/all/user">用户管理</a>
             </li>
             <li class="nav-item dropdown" align="right">
                 <a class="nav-link dropdown-toggle" href="" id="navbardrop" data-toggle="dropdown">

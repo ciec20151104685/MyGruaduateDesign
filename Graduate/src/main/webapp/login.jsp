@@ -63,7 +63,7 @@
             if (result == "ok"){
                 window.location.href = "${pageContext.request.contextPath}/user/index"
             }else{
-                layui.layer.msg("123")
+                layui.layer.msg("用户密码错误")
 //                alert("err");
             }
         })
